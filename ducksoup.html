@@ -67,7 +67,7 @@
 
 								<h3>Introduction</h3>
 								<p>
-									It has been remarkably difficult for social cognition research to study interactive contexts. Current experimental paradigms are either limited to correlational findings or by low ecological validity. To overcome such experimental limitations we created the experimental platform DuckSoup. DuckSoup is an open-source videoconference platform where researchers can manipulate participants’ facial and vocal signals in real time using voice and face processing algorithms (e.g., artificially increase the smiles of one participant, or enhance their voical intonations). DuckSoups opens the door to covertly control social signals in free and unscripted social interactions. We hope this methodology will help us improve the ecological validity, experimental control, and data collection scalability of social interaction research, while allowing researchers to study the causal effects of social signals during social interactions.
+									It is remarkably difficult for social cognition research to study interactive contexts. Current experimental paradigms are either limited to correlational findings or by low ecological validity. To overcome such experimental limitations we created the experimental platform DuckSoup. DuckSoup is an open-source videoconference platform where researchers can manipulate participants' facial and vocal signals in real time using voice and face processing algorithms (e.g., artificially increase the smiles of one participant, or enhance their voical intonations). DuckSoups opens the door to covertly control social signals in free and unscripted social interactions. We hope this methodology will help us improve the ecological validity, experimental control, and data collection scalability of social interaction research, while allowing researchers to study the causal effects of social signals during social interactions.
 								</p>
 								<div id="align-middle">
 										<img src="images/ducksoup.jpg" alt="" width=100% height=100%>
@@ -81,12 +81,13 @@
 								
 								<h3>What is it?</h3>
 									<p>
-									DuckSoup is a Go application that was built to run server side and communicate with several participants (clients).  DuckSoup uses the gstreamer C library to transform audiovisual inputs, and the WebRTC pion library  to communicate with regular browsers. During the experiments, DuckSoup (1) receives audiovisual streams from N participants through WebRTC (2) decodes them in parallel using Graphic processing units, (3) transforms them using predefined video/audio processing pipelines, (4) encodes them and (5) retransmits them with WebRTC. DuckSoup can be embedded on any webpage. Video/audio inputs/outputs can be routed as needed by the experimenter. We are sharing DuckSoup as a free and open-source platform with an MIT license .
+									DuckSoup is a Go application that was built to run server side and communicate with several participants (clients).  DuckSoup uses the gstreamer C library to transform audiovisual inputs, and the WebRTC pion library to communicate with regular browsers. During the experiments, DuckSoup (1) receives audiovisual streams from N participants through WebRTC (2) decodes them in parallel using Graphic processing units, (3) transforms them using predefined video/audio processing pipelines, (4) encodes them and (5) retransmits them with WebRTC. DuckSoup can be embedded on any webpage. Video/audio inputs/outputs can be routed as needed by the experimenter. We are sharing DuckSoup as a free and open-source platform with an MIT license. 
 									</p>
 								
 								<h3>Dynamic voice and face manipulations.</h3>
 									<p>
-								 	Ducksoup can use any gstreamer plugin to manipulate voice and face signals. Currently available and free plugins include e.g., vocal pitch shift, reverb, video blurring, mirror, etc. Moreover, we will be sharing a custom-made open-source face deformation plugin called Mozza that implements an ultra-low latency real-time smile manipulation algorithm based on 2D facial warping. Stay tuned! Check out an example of Ducksoup in Mirror Mode below!
+								 	Ducksoup can use any gstreamer plugin to manipulate video, audio, voice and face signals. Currently available and free plugins include e.g., vocal pitch shift, reverb, video blurring, mirror, etc.  Moreover, we will be sharing a custom-made open-source face deformation plugin called Mozza that implements an ultra-low latency real-time smile manipulation algorithm based on 2D facial warping.
+									All manipulations can be controled dynamically during the interactions. For instance, smiles can be dynamically triggered at specific times, to create time taged datasets organised with epoch. Check out an example of Ducksoup in Mirror Mode below where we dynamically control smile intensity!
 								 	</p>
 
 								 <div style="text-align: center; font-style: italic;"> 
@@ -108,18 +109,13 @@
 
 								<h3>References</h3>
 									<p>
-										We are working on a methodological preprint explaining DuckSoup in depth. It will be entitle "DuckSoup: An open-source experimental platform to covertly manipulate participants’ facial and vocal attributes during social interactions". We hope to release this during the summer 2023.
-										
+										We are working on a methodological preprint explaining DuckSoup in depth. It will be entitle "DuckSoup: An open-source experimental platform to covertly manipulate participants’ facial and vocal attributes during social interactions". We hope to release this in 2023.
 									</p>
 
 								<h3>Team</h3>
 									<p>
-										Pablo Arias Sarah is leading the project, the main developer is Guillaume Denis. We developed this with the help and inputs of Jean-Julien Aucouturier, Petter Joahnsson and Lars Hall. 
-
+										Pablo Arias Sarah is leading the project, the main developer is Guillaume Denis. We developed this with the help and inputs of Jean-Julien Aucouturier, Petter Joahnsson and Lars Hall.
 									</p>
-
-
-
 
 							</section>	
 						</article>
